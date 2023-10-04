@@ -1,6 +1,7 @@
 # Project Name
 
-Context and date
+Juicy-Brick-Breaker
+2023/10/03
 
 Description
 
@@ -17,3 +18,4 @@ Which features you included
 
 
 ## Created by
+Andy Park
