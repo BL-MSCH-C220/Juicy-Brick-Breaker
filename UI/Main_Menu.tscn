@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ei3ny6s8bla5"]
+[gd_scene load_steps=3 format=3 uid="uid://ei3ny6s8bla5"]
 
 [ext_resource type="Script" path="res://UI/Main_Menu.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://bpir6jffhmck3" path="res://Assets/y2mate.com - 부금 밝은레트로8bit 게임 시작 BGM무료브금Royalty Free.mp3" id="2_scelr"]
 
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
@@ -55,6 +56,10 @@ offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Quit"
+
+[node name="Wall_Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_scelr")
+autoplay = true
 
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

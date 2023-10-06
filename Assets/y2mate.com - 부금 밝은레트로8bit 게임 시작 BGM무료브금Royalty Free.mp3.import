@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpir6jffhmck3"
+path="res://.godot/imported/y2mate.com - 부금 밝은레트로8bit 게임 시작 BGM무료브금Royalty Free.mp3-43446f705c1d3ad6978ed706781a704d.mp3str"
+
+[deps]
+
+source_file="res://Assets/y2mate.com - 부금 밝은레트로8bit 게임 시작 BGM무료브금Royalty Free.mp3"
+dest_files=["res://.godot/imported/y2mate.com - 부금 밝은레트로8bit 게임 시작 BGM무료브금Royalty Free.mp3-43446f705c1d3ad6978ed706781a704d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

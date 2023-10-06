@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bd5m3yq1k5fx8"]
+[gd_scene load_steps=18 format=3 uid="uid://bd5m3yq1k5fx8"]
 
 [ext_resource type="Script" path="res://Brick/Brick_Container.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://batxdldth7p7h" path="res://Paddle/Paddle.tscn" id="2"]
@@ -10,6 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://r1nm10jeqyta" path="res://UI/Instructions.tscn" id="8"]
 [ext_resource type="Script" path="res://Effects/Fever.gd" id="9"]
 [ext_resource type="Script" path="res://UI/Camera.gd" id="10_ese0q"]
+[ext_resource type="AudioStream" uid="uid://bpir6jffhmck3" path="res://Assets/y2mate.com - 부금 밝은레트로8bit 게임 시작 BGM무료브금Royalty Free.mp3" id="11_wlbnd"]
+[ext_resource type="AudioStream" uid="uid://gkqfg84018ud" path="res://Assets/y2mate.com - 무료효과음 Rubble Breaking 무너진 담 벽돌파편 소리 Free Sound   Effects-[AudioTrimmer.com].mp3" id="12_ubw0p"]
+[ext_resource type="AudioStream" uid="uid://b54soptw8luip" path="res://Assets/wall.mp3" id="13_1b7bo"]
+[ext_resource type="AudioStream" uid="uid://cyfct1qe487se" path="res://Assets/죽.mp3" id="14_5uvct"]
+[ext_resource type="AudioStream" uid="uid://dqtplsdekpcub" path="res://Assets/qkecla.mp3" id="15_7w56e"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(200, 1000)
@@ -82,5 +87,24 @@ visible = false
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 script = ExtResource("10_ese0q")
+
+[node name="Back_Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_wlbnd")
+volume_db = -15.0
+autoplay = true
+
+[node name="Brick_Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_ubw0p")
+volume_db = -15.0
+autoplay = true
+
+[node name="Wall_Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_1b7bo")
+
+[node name="Die_Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_5uvct")
+
+[node name="Paddle_Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_7w56e")
 
 [connection signal="timeout" from="Fever/Timer" to="Fever" method="_on_Timer_timeout"]
