@@ -8,8 +8,8 @@ Description
 
 ## Implementation
 The game engine was implemented in Python 3.10 with Godot 4.
-Drawing Assets by Andy Park
-Music from Youtube(Noncopyright)
+- Drawing Assets by Andy Park
+- Music from Youtube(Noncopyright)
 
 ## References
 Coding: Indiana University Jason Francis's Class Art: Andy Park
