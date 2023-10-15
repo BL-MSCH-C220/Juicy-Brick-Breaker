@@ -7,7 +7,7 @@ Description
 
 
 ## Implementation
-The game engine was implemented in Python 3.10 with Godot 4.
+The game engine was implemented in Python 3.10 with Godot 4.1
 - Drawing Assets by Andy Park
 - Music from Youtube(Noncopyright)
 - Brick and part of paddle Assets from puzzle-pack/Kenney
